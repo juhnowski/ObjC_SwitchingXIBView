@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  SwitchingXIBView
 //
 //  Created by Илья Юхновский on 02.06.2018.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-- (IBAction)switchToXIB:(id)sender;
-
+@interface SecondViewController : UIViewController
+- (IBAction)dismiss:(id)sender;
 
 @end
-

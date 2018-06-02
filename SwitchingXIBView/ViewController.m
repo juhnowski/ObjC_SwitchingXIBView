@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -26,4 +27,9 @@
 }
 
 
+- (IBAction)switchToXIB:(id)sender {
+    SecondViewController *second = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
+    second.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:second animated:YES completion:NULL];
+}
 @end
